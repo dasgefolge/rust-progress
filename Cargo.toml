@@ -1,0 +1,4 @@
+[package]
+name = "progress"
+version = "0.0.1"
+authors = ["Fenhl <fenhl@fenhl.net>"]
