@@ -11,7 +11,7 @@ pub struct Graph<K: Eq + Hash, N, E> {
 
 impl<K: Eq + Hash, N, E> Graph<K, N, E> {
     pub fn edges_from(&self, from_key: &K) -> hash_map::Iter<K, E> {
-        self.edges[*from_key].iter()
+        self.edges[from_key].iter()
     }
 
     pub fn nodes(&self) -> hash_map::Iter<K, N> {
